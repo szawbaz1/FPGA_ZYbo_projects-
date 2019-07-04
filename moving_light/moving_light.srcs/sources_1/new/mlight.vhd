@@ -38,16 +38,16 @@ entity mlight is
 end mlight;
 
 architecture Behavioral of mlight is
-constant clkdiv:integer:=24;
+constant clkdiv:integer:=25;
 signal counter: std_logic_vector (clkdiv-1 downto 0):=(others=>'0');
-signal pulse_7_45Hz:std_logic;  --i want to write 7.45 hz
+signal pulse_3_72Hz:std_logic;  --i want to write 3.72 hz
 signal led_reg:std_logic_vector(3 downto 0);
 --signal clock_activate_signal:std_logic;
 
 
 begin
 
-pulse_7_45Hz<='1' when counter=std_logic_vector(to_unsigned(0,counter'length))else '0';
+pulse_3_72Hz<='1' when counter=std_logic_vector(to_unsigned(0,counter'length))else '0';
 leds<=led_reg;
 --clock_activate_signal<='1';
 
@@ -59,10 +59,10 @@ if (clock'event and clock='1') then
 end if;
 end process;      
 
-process (pulse_7_45Hz,clock,sw)
+process (pulse_3_72Hz,clock,sw)
 begin 
 if (clock'event and clock='1') then
-    if pulse_7_45Hz='1' then 
+    if pulse_3_72Hz='1' then 
         if sw(2)='1' then 
             led_reg<="0011";
         elsif sw(0)= '1' then

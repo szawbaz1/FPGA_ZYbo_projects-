@@ -1,3 +1,7 @@
+*.jou
+*.log
+*.str
+
 2_bit_comparator.cache/
 2_bit_comparator.hw/
 2_bit_comparator.ip_user_files/
@@ -10,6 +14,7 @@
 3bit_decode.ip_user_files/
 3bit_decode.runs/
 3bit_decode.sim/
+
 
 blinky.cache/
 blinky.hw/
@@ -30,3 +35,15 @@ primeno_detector.ip_user_files/
 primeno_detector.runs/
 primeno_detector.sim/
 
+mcprom.cache/
+mcprom.hw/
+mcprom.ip_user_files/
+mcprom.runs/
+mcprom.sim/
+
+
+package_test.cache/
+package_test.hw/
+package_test.ip_user_files/
+package_test.runs/
+package_test.sim/

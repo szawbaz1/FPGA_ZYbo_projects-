@@ -67,6 +67,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/regpkg.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="my_registers"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/reg8.vhd">
         <FileInfo>
           <Attr Name="Library" Val="my_registers"/>
@@ -76,14 +83,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/pkg_top.vhd">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/regpkg.vhd">
-        <FileInfo>
-          <Attr Name="Library" Val="my_registers"/>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

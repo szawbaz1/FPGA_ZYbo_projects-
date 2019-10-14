@@ -22,12 +22,15 @@
     
     use work.my_pkg.all;
     --library  my_registers;
-    use work.regpkg.all;
+    library my_registers;
+    use my_registers.regpkg.all;
     
     entity pkg_top is
         Port ( clk : in  STD_LOGIC;
                d : in  STD_LOGIC;
-               q : out  STD_LOGIC);
+               q : out  STD_LOGIC;
+               qout_test: out STD_LOGIC_vector(3 downto 0)
+               );
     end pkg_top;
     
     architecture Behavioral of pkg_top is
@@ -41,11 +44,11 @@
         end process;
         
         reg10:reg8
-        generic map (REGSIZE=>10)
+        generic map (REGSIZE=>4)
         PORT MAP(clk=>clk,
         clr=>'0',
-        din=>"0110001100",
-        qout=>open);
+        din=>"1111",
+        qout=>qout_test);
         
         
         

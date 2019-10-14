@@ -1,6 +1,7 @@
 *.jou
 *.log
 *.str
+.gitignore.orig
 
 2_bit_comparator.cache/
 2_bit_comparator.hw/

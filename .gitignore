@@ -47,3 +47,10 @@ package_test.hw/
 package_test.ip_user_files/
 package_test.runs/
 package_test.sim/
+
+lab7_rotshift.cache/
+lab7_rotshift.hw/
+lab7_rotshift.ip_user_files/
+lab7_rotshift.runs/
+lab7_rotshift.sim/
+
